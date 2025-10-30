@@ -22,7 +22,7 @@ export default function Header() {
           {/* Logo */}
           <div className="shrink-0">
             <Link href="/" className="flex items-center">
-              <div className="h-8 w-8 bg-blue-600 rounded-lg flex items-center justify-center">
+              <div className="h-8 w-8 bg-[#20B2AA] rounded-lg flex items-center justify-center">
                 <Plane className="h-5 w-5 text-white" />
               </div>
               <span className="ml-2 text-xl font-bold text-gray-900">TravelHub</span>
@@ -53,7 +53,7 @@ export default function Header() {
               <span>Search</span>
             </button>
             
-            <Link href="/signin" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+            <Link href="/signin" className="flex items-center  space-x-1 bg-[#20B2AA] text-white hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
               <User className="h-4 w-4" />
               <span className="hidden sm:inline">Login</span>
             </Link>
