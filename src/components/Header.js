@@ -53,10 +53,10 @@ export default function Header() {
               <span>Search</span>
             </button>
             
-            <button className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
+            <Link href="/signin" className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
               <User className="h-4 w-4" />
               <span className="hidden sm:inline">Login</span>
-            </button>
+            </Link>
 
             {/* Mobile menu button */}
             <button

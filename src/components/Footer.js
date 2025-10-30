@@ -41,7 +41,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-white text-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Main footer content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
@@ -53,7 +53,7 @@ export default function Footer() {
               </div>
               <span className="ml-2 text-xl font-bold">TravelHub</span>
             </div>
-            <p className="text-gray-400 text-sm mb-4">
+            <p className="text-gray-600 text-sm mb-4">
               Your trusted travel partner for flights, hotels, holidays, and visa services.
             </p>
             <div className="flex space-x-4">
@@ -63,7 +63,7 @@ export default function Footer() {
                   <a
                     key={social.name}
                     href={social.href}
-                    className="text-gray-400 hover:text-white transition-colors"
+                    className="text-gray-600 hover:text-gray-900 transition-colors"
                   >
                     <Icon className="h-5 w-5" />
                   </a>
@@ -78,7 +78,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {exploreLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-gray-400 hover:text-white transition-colors text-sm">
+                  <Link href={link.href} className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
                     {link.name}
                   </Link>
                 </li>
@@ -92,7 +92,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {servicesLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-gray-400 hover:text-white transition-colors text-sm">
+                  <Link href={link.href} className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
                     {link.name}
                   </Link>
                 </li>
@@ -106,7 +106,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {usefulLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-gray-400 hover:text-white transition-colors text-sm">
+                  <Link href={link.href} className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
                     {link.name}
                   </Link>
                 </li>
@@ -120,7 +120,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {promotionLinks.map((link) => (
                 <li key={link.name}>
-                  <Link href={link.href} className="text-gray-400 hover:text-white transition-colors text-sm">
+                  <Link href={link.href} className="text-gray-600 hover:text-gray-900 transition-colors text-sm">
                     {link.name}
                   </Link>
                 </li>
@@ -130,12 +130,12 @@ export default function Footer() {
         </div>
 
         {/* Contact Information */}
-        <div className="border-t border-gray-800 mt-8 pt-8">
+        <div className="border-t border-gray-200 mt-8 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Contact Us */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-              <div className="space-y-2 text-sm text-gray-400">
+              <div className="space-y-2 text-sm text-gray-600">
                 <div className="flex items-center">
                   <Mail className="h-4 w-4 mr-2" />
                   <span>ask@travelhub.com</span>
@@ -154,12 +154,12 @@ export default function Footer() {
             {/* Office Locations */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Office Locations</h3>
-              <div className="space-y-3 text-sm text-gray-400">
+              <div className="space-y-3 text-sm text-gray-600">
                 <div>
                   <div className="flex items-start">
                     <MapPin className="h-4 w-4 mr-2 mt-0.5" />
                     <div>
-                      <p className="font-medium text-white">Dhaka Office</p>
+                      <p className="font-medium text-gray-900">Dhaka Office</p>
                       <p>3rd Floor, House 1, Road 17, Block C, Banani, Dhaka 1213, Bangladesh</p>
                     </div>
                   </div>
@@ -168,7 +168,7 @@ export default function Footer() {
                   <div className="flex items-start">
                     <MapPin className="h-4 w-4 mr-2 mt-0.5" />
                     <div>
-                      <p className="font-medium text-white">Chattogram Office</p>
+                      <p className="font-medium text-gray-900">Chattogram Office</p>
                       <p>BM Height 5th Floor, 318 Sheikh Mujib Road, Chattogram 4100, Bangladesh</p>
                     </div>
                   </div>
@@ -181,7 +181,7 @@ export default function Footer() {
               <h3 className="text-lg font-semibold mb-4">We Accept</h3>
               <div className="grid grid-cols-3 gap-2">
                 {["Visa", "MasterCard", "bKash", "Nagad", "Rocket", "Upay"].map((method) => (
-                  <div key={method} className="bg-gray-800 rounded p-2 text-center text-xs">
+                  <div key={method} className="bg-gray-100 rounded p-2 text-center text-xs text-gray-800">
                     {method}
                   </div>
                 ))}
@@ -191,19 +191,19 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-gray-800 mt-8 pt-6">
+        <div className="border-t border-gray-200 mt-8 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-sm text-gray-400 mb-4 md:mb-0">
+            <div className="text-sm text-gray-600 mb-4 md:mb-0">
               Copyright © {currentYear}. TravelHub. All rights reserved.
             </div>
             <div className="flex space-x-6 text-sm">
-              <Link href="/support" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="/support" className="text-gray-600 hover:text-gray-900 transition-colors">
                 Support Center
               </Link>
-              <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="/privacy" className="text-gray-600 hover:text-gray-900 transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/payment-security" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="/payment-security" className="text-gray-600 hover:text-gray-900 transition-colors">
                 Payment Security
               </Link>
             </div>
